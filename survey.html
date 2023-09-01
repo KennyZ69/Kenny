@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Project</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <h1 id="title">
+        Survey Project
+    </h1>
+   <div class="container">
+    <header class="header">
+    <p id="description">
+        It would help us improve if you'd use a minute of your time for our survey
+    </p>
+    </header>
+    <form action="index.php" method="post" id="survey-form">
+        <div class="div">
+        <label id="name-label" >Name:<input type="text" id="name" required placeholder="Your Name"></label>
+        <label id="email-label">Email:<input type="email" id="email" required placeholder="YourEmail@gmail.com"> </label>
+        <label id="number-label">Age:<input type="number" id="age" min="13" max="109" placeholder="Age"></label>
+        <label id="occupation"> 
+            What is your occupation?
+            <select id="dropdown">
+                <option value="" name="option">Select your occupation</option>
+                <option name="option" value="1">Student</option>
+                <option name="option" value="2">Full-time Job</option>
+                <option name="option" value="3">Unemployed</option>
+                <option name="option" value="4">Other</option>
+            </select>
+        </label>
+    </div class="div">
+    <div class="div">
+        Do you like the work we are doing here?
+        <label for="button1"><input id="button1" type="radio" name="radio-button" class="inline" /> Definitely</label>
+        <label for="button2"><input id="button2" type="radio" name="radio-button" class="inline" /> I'm not so sure</label>
+        <label for="button3">
+          <input id="button3" type="radio" name="radio-button" class="inline" /> Absolutely not </label>
+        </div>
+        <div class="div">
+        What would you like us to give out more?
+          <label for="check1"><input id="check1" type="checkbox" class="checkbox" value="1">Tutorials</label>
+          <label for="check2"><input id="check2" type="checkbox" class="checkbox" value="2">Projects</label>
+          <label for="check3"><input id="check3" type="checkbox" class="checkbox" value="3">Podcasts</label>
+          <label for="check4"><input id="check4" type="checkbox" class="checkbox" value="4">Front-end</label>
+          <label for="check5"><input id="check5" type="checkbox" class="checkbox" value="5">Back-end</label>
+        </div>
+        <div class="div">  
+        <label for="comment">Additional comments:
+            <textarea id="comment" name="comment" rows="3" cols="36" placeholder="Enter your comment here..."></textarea>
+          </label>
+        </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+        </div>
+</body>
+</html>
